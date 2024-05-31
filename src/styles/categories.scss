@@ -82,6 +82,7 @@
     align-items: center;
     flex-shrink: 0;
     cursor: pointer;
+    transition: background-color 0.6s ease, transform 0.6s ease;
 
     &:hover {
       background-color: $content-text-color;

@@ -45,6 +45,7 @@
       letter-spacing: 0.15px;
       text-decoration: none;
       cursor: pointer;
+      transition: color 0.3s ease, transform 0.6s ease;
 
       &:hover {
         color: $color-button-effects;
@@ -67,6 +68,7 @@
     background: #F9F9F9;
     border: 1px solid transparent;
     box-sizing: border-box;
+    transition: border 0.6s ease, transform 0.6s ease;
 
     &:focus {
       color: $content-text-color;
@@ -94,6 +96,7 @@
     border: 1px solid transparent;
     box-sizing: border-box;
     resize: none;
+    transition: border 0.6s ease, transform 0.6s ease;
 
     &:focus {
       color: $content-text-color;
@@ -129,7 +132,7 @@
     line-height: 27px;
     border: none;
     cursor: pointer;
-    transition: transform 0.6s ease;
+    transition: background-color 0.6s ease, transform 0.6s ease;
 
     &:hover {
       background-color: $content-text-color;
@@ -150,17 +153,14 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
-  box-shadow: 0 0 0px 1000px white inset !important;
-  -webkit-text-fill-color: #000 !important;
+  background-color:  #F9F9F9;
   transition: background-color 5000s ease-in-out 0s !important;
 }
 
 input:-moz-autofill,
 textarea:-moz-autofill,
 select:-moz-autofill {
-  box-shadow: 0 0 0px 1000px white inset !important;
-  -moz-text-fill-color: #000 !important;
+  -moz-text-fill-color:  $content-text-color;
 }
 
 
